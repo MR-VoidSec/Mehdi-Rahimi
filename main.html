@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وب‌سایت شخصی شما</title>
+    <!-- لینک کتابخانه Font Awesome برای استفاده از آیکون‌ها -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <style>
+        /* تنظیمات کلی صفحه */
+        body {
+            font-family: 'Vazirmatn', sans-serif; /* استفاده از یک فونت فارسی خوانا */
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #141E30;  /* یک پس‌زمینه تیره و زیبا */
+            background: -webkit-linear-gradient(to right, #243B55, #141E30);
+            background: linear-gradient(to right, #243B55, #141E30);
+            color: #ffffff;
+        }
+
+        /* کانتینر اصلی برای محتوا */
+        .container {
+            max-width: 450px;
+            width: 100%;
+            text-align: center;
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+
+        /* استایل عکس پروفایل */
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #c8a2c8; /* رنگ صورتی-بنفش ملایم برای حاشیه */
+            object-fit: cover;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+        .profile-img:hover {
+            transform: scale(1.05); /* کمی بزرگنمایی در زمان هاور */
+        }
+
+        /* استایل نام و بیوگرافی */
+        h1 {
+            margin: 10px 0;
+            font-size: 1.8rem;
+        }
+
+        .bio {
+            font-size: 1rem;
+            color: #e0e0e0;
+            margin-bottom: 30px;
+        }
+
+        /* لیست لینک‌ها */
+        .links {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .links li {
+            margin-bottom: 15px;
+        }
+
+        .links a {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* محتوا در مرکز دکمه */
+            background-color: rgba(200, 162, 200, 0.8); /* رنگ بنفش-صورتی نیمه‌شفاف */
+            color: #1a1a1a;
+            padding: 15px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        /* افکت هاور برای لینک‌ها */
+        .links a:hover {
+            background-color: rgba(220, 182, 220, 1);
+            transform: translateY(-3px); /* کمی به بالا حرکت کند */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* استایل آیکون‌های داخل لینک */
+        .links a i {
+            margin-right: 10px; /* فاصله آیکون از متن */
+            font-size: 1.2rem;
+        }
+        
+        /* بخش فوتر برای شبکه‌های اجتماعی */
+        .social-footer {
+            margin-top: 40px;
+        }
+        
+        .social-footer a {
+            color: #c8a2c8;
+            margin: 0 15px;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .social-footer a:hover {
+            color: #ffffff;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- بخش پروفایل -->
+        <header>
+            <!-- عکس پروفایل خود را اینجا قرار دهید -->
+            <img src="https://via.placeholder.com/150" alt="عکس پروفایل" class="profile-img">
+            
+            <!-- نام خود را وارد کنید -->
+            <h1>نام و نام خانوادگی</h1>
+            
+            <!-- یک بیوگرافی یا توضیح کوتاه -->
+            <p class="bio">برنامه‌نویس وب | علاقه‌مند به تکنولوژی و کتابخوانی</p>
+        </header>
+
+        <!-- بخش لینک‌ها -->
+        <main>
+            <ul class="links">
+                <!-- لینک‌های خود را در اینجا ویرایش کنید -->
+                <li>
+                    <a href="https://linkedin.com/in/your-profile" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                        لینکدین
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/your-username" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                        گیت‌هاب
+                    </a>
+                </li>
+                <li>
+                    <a href="https://t.me/your-username" target="_blank">
+                        <i class="fa-brands fa-telegram"></i>
+                        تماس مستقیم
+                    </a>
+                </li>
+                <li>
+                    <a href="https://your-blog-or-website.com" target="_blank">
+                        <i class="fa-solid fa-globe"></i>
+                        وب‌سایت شخصی
+                    </a>
+                </li>
+            </ul>
+        </main>
+        
+        <!-- فوتر و شبکه‌های اجتماعی بیشتر -->
+        <footer class="social-footer">
+            <a href="#" target="_blank" title="اینستاگرام"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank" title="توییتر (X)"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:your-email@example.com" title="ایمیل"><i class="fas fa-envelope"></i></a>
+        </footer>
+    </div>
+
+</body>
+</html>
